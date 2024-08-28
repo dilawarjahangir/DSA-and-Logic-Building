@@ -46,6 +46,10 @@ const increasingPattern=()=>{
 // increasingPattern()
 
 
+// 1
+// 12
+// 123
+// 1234
 const halfPyramid=()=>{
     for (let i = 1; i <5; i++) {
         for (let j = 1; j <=i; j++) {
@@ -55,4 +59,45 @@ const halfPyramid=()=>{
     }
 }
 
-halfPyramid()
+// halfPyramid()
+
+
+// A
+// AB
+// ABc
+// ABCD
+const characterHalfPyramid = () => {
+    let rows = 4;
+    let charCode = 'A'.charCodeAt(0); 
+    
+    for (let i = 0; i < rows; i++) {  
+        for (let j = 0; j <= i; j++) { 
+            process.stdout.write(String.fromCharCode(charCode + j)); 
+        }
+        console.log(); 
+    }
+}
+
+// characterHalfPyramid();
+
+
+// A
+// BC
+// DEF
+// GHIJ
+
+const increasingCharacterHalfPyramid = () => {
+    let rows = 4;
+    let charCode = 'A'.charCodeAt(0); 
+    // console.log(charCode)
+    for (let i = 0; i < rows; i++) {  
+        for (let j = 0; j <= i; j++) { 
+            process.stdout.write(String.fromCharCode(charCode));
+            charCode+=1 
+        }
+        
+        console.log(); 
+    }
+}
+
+increasingCharacterHalfPyramid();

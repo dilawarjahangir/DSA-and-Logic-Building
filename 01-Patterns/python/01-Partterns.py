@@ -55,4 +55,42 @@ def half_pyramid():
             print(f"{j+1}",end="")
         print()
     
-half_pyramid()
+# half_pyramid()
+
+
+
+
+    # A
+    # AB
+    # ABC
+    # ABCD
+def character_half_pyramid():
+    code=65
+    row=4
+    for i in range(row):
+        for j  in range(i+1):
+            print(f"{chr(code+j)}",end="")
+            
+        
+        print()
+
+# character_half_pyramid()
+
+
+# A
+# BC
+# DEF
+# GHIJ
+def increasing_character_half_pyramid():
+    code=65
+    row=4
+    for i in range(row):
+        for j  in range(i+1):
+            print(f"{chr(code)}",end="")
+            code=code+1
+        
+        print()
+
+increasing_character_half_pyramid()
+
+
