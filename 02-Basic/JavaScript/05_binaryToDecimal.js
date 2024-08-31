@@ -1,4 +1,4 @@
-let string= "1010101100011"
+let string= "10111100001"
 
 function binaryToDecimal(str){
     let decimal=0

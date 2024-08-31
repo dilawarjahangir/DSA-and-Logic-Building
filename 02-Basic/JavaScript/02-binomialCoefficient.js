@@ -24,3 +24,4 @@ function binomialCoefficient (n,r){
 
 let bi=binomialCoefficient(5,5)
 console.log(bi)
+
