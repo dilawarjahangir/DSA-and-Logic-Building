@@ -150,119 +150,90 @@ const butterFly = () => {
 
 //   butterFly();
 
-
-
-
-
-    // *****
-  //  ***** 
-  // *****  
-//  *****   
-// *****    
+// *****
+//  *****
+// *****
+//  *****
+// *****
 
 const rombus = () => {
-    size=5
-    print=5
+  size = 5;
+  print = 5;
   for (let i = 1; i <= size; i++) {
-    for (let j = 1; j <= (size*2)-1; j++) {
-        if(j>=print && j<print+5 ){
-            process.stdout.write("*")
-        }else{
-            process.stdout.write(" ")
-        }
+    for (let j = 1; j <= size * 2 - 1; j++) {
+      if (j >= print && j < print + 5) {
+        process.stdout.write("*");
+      } else {
+        process.stdout.write(" ");
       }
-      print--
-    console.log()
+    }
+    print--;
+    console.log();
   }
 };
 
 // rombus()
 
-
-
-
-
 //     *****
-//    *   * 
-//   *   *  
-//  *   *   
-// *****    
+//    *   *
+//   *   *
+//  *   *
+// *****
 const hollowRombus = () => {
-  size=5
-  print=5
-for (let i = 1; i <= size; i++) {
-  for (let j = 1; j <= (size*2)-1; j++) {
-      if(j>=print && j<print+5 ){
-        if(i===1 ||  i==5 ||  j==print || j===print+4 ){
-          process.stdout.write("*")
-
+  size = 5;
+  print = 5;
+  for (let i = 1; i <= size; i++) {
+    for (let j = 1; j <= size * 2 - 1; j++) {
+      if (j >= print && j < print + 5) {
+        if (i === 1 || i == 5 || j == print || j === print + 4) {
+          process.stdout.write("*");
+        } else {
+          process.stdout.write(" ");
         }
-        else{
-
-          process.stdout.write(" ")
-        }
-      }else{
-          process.stdout.write(" ")
+      } else {
+        process.stdout.write(" ");
       }
     }
-    print--
-  console.log()
-}
+    print--;
+    console.log();
+  }
 };
 
 // hollowRombus()
 
-
-
-
-
-
-//    *   
-//   ***  
-//  ***** 
+//    *
+//   ***
+//  *****
 // *******
-//  ***** 
-//   ***  
-//    *   
-const diamond=()=>{
- size=8
-  left=8/2
-  right=8/2
-  for(let i=1;i<size; i++){
-    for(let j=1;j<size; j++){
-      if(j>=left && j<=right ){
-
-        process.stdout.write("*")      
-      }else{
-        
-        process.stdout.write(" ")      
+//  *****
+//   ***
+//    *
+const diamond = () => {
+  size = 8;
+  left = 8 / 2;
+  right = 8 / 2;
+  for (let i = 1; i < size; i++) {
+    for (let j = 1; j < size; j++) {
+      if (j >= left && j <= right) {
+        process.stdout.write("*");
+      } else {
+        process.stdout.write(" ");
       }
-
-    } 
-    
-
-    if(i>=4){
-      left++
-      right--
-    }
-    else{
-      left--
-    right++ 
     }
 
-    console.log()
+    if (i >= 4) {
+      left++;
+      right--;
+    } else {
+      left--;
+      right++;
+    }
+
+    console.log();
   }
-}
+};
 
-diamond()
-
-
-
-
-
-
-
-
+diamond();
 
 const show = () => {
   for (let i = 0; i < 5; i++) {
